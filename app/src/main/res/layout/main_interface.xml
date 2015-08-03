@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_colour">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_gravity="top">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:id="@+id/flColourButtons">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton14"
+                        android:background="@drawable/red"
+                        android:layout_columnWeight="25"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton15"
+                        android:background="@drawable/green"
+                        android:layout_columnWeight="25"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton16"
+                        android:layout_column="2"
+                        android:background="@drawable/yellow"
+                        android:layout_columnWeight="25"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton17"
+                        android:layout_column="3"
+                        android:background="@drawable/blue"
+                        android:layout_columnWeight="25"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:id="@+id/flBluraySelect">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnBluray"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bluraylogo"
+                    android:contentDescription="BluRay" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:layout_gravity="bottom">
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/flCustomButtons"
+                android:layout_gravity="left"
+                android:layout_weight=".33">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonborder"
+                    android:padding="20dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:id="@+id/flSkySelect">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnSky"
+                            android:text="Hello"
+                            android:layout_gravity="center"
+                            android:background="#ffff9005"
+                            android:src="@drawable/skylogo" />
+                    </FrameLayout>
+
+                    <fragment
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:name="com.consof.universalremote.fNavigation"
+                        android:id="@+id/fragment4"
+                        tools:layout="@layout/fragment_f_navigation"
+                        android:layout_gravity="center" />
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:name="com.consof.universalremote.fMiscButtons"
+                        android:id="@+id/fragment5"
+                        tools:layout="@layout/fragment_f_misc_buttons" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.33"
+                android:id="@+id/flStandardButtons"
+                android:background="@drawable/buttonborder">
+
+                <fragment
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:name="com.consof.universalremote.fNumPad"
+                    android:id="@+id/fragment"
+                    tools:layout="@layout/fragment_f_num_pad"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:id="@+id/flPlayerButtons"
+                android:background="@drawable/buttonborder">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <fragment
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:name="com.consof.universalremote.fRecordButtons"
+                        android:id="@+id/fragment3"
+                        android:layout_gravity="center"
+                        tools:layout="@layout/fragment_f_record_buttons" />
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:name="com.consof.universalremote.fCustomButtons"
+                        android:id="@+id/fragment2"
+                        tools:layout="@layout/fragment_f_custom_buttons" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

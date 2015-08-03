@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.consof.universalremote.fNumPad">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15px"
+        android:columnCount="3"
+        android:rowCount="5">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumOne"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:src="@drawable/numone"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumTwo"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:src="@drawable/numtwo"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumThree"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:src="@drawable/numthree"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumFour"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:src="@drawable/numfour"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumFive"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:src="@drawable/numfive"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumSix"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:src="@drawable/numsix"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumSeven"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:src="@drawable/numseven"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumEight"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:src="@drawable/numeight"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumNine"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:src="@drawable/numnine"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNumTen"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:src="@drawable/numzero"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+    </GridLayout>
+</FrameLayout>
